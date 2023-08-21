@@ -21,17 +21,19 @@ function homeCookerItem(target) {
     // console.log(inputText);
     if (inputText === "SELL200") {
       sellButton.removeAttribute("disabled");
-    }
-
-    if (firstTotal >= 200) {
-      const priceTotal = firstTotal * 0.2;
-      const discountPrice = (document.getElementById("discount").innerText =
-        priceTotal);
-      const discount = firstTotal - priceTotal;
-      const totalPrice = (document.getElementById("total").innerText =
-        discount);
+      sellButton.addEventListener("click", function () {
+        if (firstTotal >= 200) {
+          const priceTotal = firstTotal * 0.2;
+          const discountPrice = (document.getElementById("discount").innerText =
+            priceTotal);
+          const discount = firstTotal - priceTotal;
+          const totalPrice = (document.getElementById("total").innerText =
+            discount);
+        }
+      });
     }
   });
+
   const totalPrice = (document.getElementById("total").innerText = firstTotal);
 }
 
@@ -47,6 +49,7 @@ function sportsCatesItem(target) {
   total = parseFloat(total) + parseFloat(price);
   // console.log(total);
   const firstTotal = (document.getElementById("total-price").innerText = total);
+
   const sellInput = document.getElementById("coupon-input");
   const sellButton = document.getElementById("coupon-button");
   sellInput.addEventListener("input", () => {
@@ -55,17 +58,19 @@ function sportsCatesItem(target) {
     // console.log(inputText);
     if (inputText === "SELL200") {
       sellButton.removeAttribute("disabled");
-    }
-
-    if (firstTotal >= 200) {
-      const priceTotal = firstTotal * 0.2;
-      const discountPrice = (document.getElementById("discount").innerText =
-        priceTotal);
-      const discount = firstTotal - priceTotal;
-      const totalPrice = (document.getElementById("total").innerText =
-        discount);
+      sellButton.addEventListener("click", function () {
+        if (firstTotal >= 200) {
+          const priceTotal = firstTotal * 0.2;
+          const discountPrice = (document.getElementById("discount").innerText =
+            priceTotal);
+          const discount = firstTotal - priceTotal;
+          const totalPrice = (document.getElementById("total").innerText =
+            discount);
+        }
+      });
     }
   });
+
   const totalPrice = (document.getElementById("total").innerText = firstTotal);
 }
 
@@ -89,16 +94,18 @@ function homeCookItem(target) {
     // console.log(inputText);
     if (inputText === "SELL200") {
       sellButton.removeAttribute("disabled");
-    }
-
-    if (firstTotal >= 200) {
-      const priceTotal = firstTotal * 0.2;
-      const discountPrice = (document.getElementById("discount").innerText =
-        priceTotal);
-      const discount = firstTotal - priceTotal;
-      const totalPrice = (document.getElementById("total").innerText =
-        discount);
+      sellButton.addEventListener("click", function () {
+        if (firstTotal >= 200) {
+          const priceTotal = firstTotal * 0.2;
+          const discountPrice = (document.getElementById("discount").innerText =
+            priceTotal);
+          const discount = firstTotal - priceTotal;
+          const totalPrice = (document.getElementById("total").innerText =
+            discount);
+        }
+      });
     }
   });
+
   const totalPrice = (document.getElementById("total").innerText = firstTotal);
 }
