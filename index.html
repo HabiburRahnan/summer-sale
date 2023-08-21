@@ -57,8 +57,10 @@
         <section class="max-w-screen-xl mx-auto px-8 md:px-16 lg:px-24 my-10">
           <!-- card section -->
           <h1 class="text-4xl font-semibold m-10">Kitchenware</h1>
-          <div  class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-            <div  onclick="cardClickItem()" class="card bg-base-100 shadow-xl">
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div
+              onclick="homeCookerItem(this)"
+              class="card bg-base-100 shadow-xl">
               <figure>
                 <img src="./image/prod1.png" alt="" />
               </figure>
@@ -87,10 +89,12 @@
                     class="mask mask-star-2 bg-orange-400" />
                 </div>
                 <h2 class="card-title">K. Accessories</h2>
-                <p>49.00 TK</p>
+                <p><span>49.00</span> TK</p>
               </div>
             </div>
-            <div class="card bg-base-100 shadow-xl">
+            <div
+              onclick="homeCookerItem(this)"
+              class="card bg-base-100 shadow-xl">
               <figure>
                 <img src="./image/prod2.png" alt="" />
               </figure>
@@ -119,10 +123,12 @@
                     class="mask mask-star-2 bg-orange-400" />
                 </div>
                 <h2 class="card-title">K. Accessories</h2>
-                <p>25.00 TK</p>
+                <p><span>59.00</span> TK</p>
               </div>
             </div>
-            <div class="card bg-base-100 shadow-xl">
+            <div
+              onclick="homeCookerItem(this)"
+              class="card bg-base-100 shadow-xl">
               <figure>
                 <img src="./image/prod3.png" alt="" />
               </figure>
@@ -151,7 +157,7 @@
                     class="mask mask-star-2 bg-orange-400" />
                 </div>
                 <h2 class="card-title">Home Cooker</h2>
-                <p>49.00 TK</p>
+                <p><span>49.00</span> TK</p>
               </div>
             </div>
           </div>
@@ -161,7 +167,9 @@
           <!-- card section -->
           <h1 class="text-4xl font-semibold m-10">Sportswear</h1>
           <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-            <div class="card bg-base-100 shadow-xl">
+            <div
+              onclick="sportsCatesItem(this)"
+              class="card bg-base-100 shadow-xl">
               <figure>
                 <img src="./image/prod4.png" alt="" />
               </figure>
@@ -190,10 +198,12 @@
                     class="mask mask-star-2 bg-orange-400" />
                 </div>
                 <h2 class="card-title">Sports Back Cap</h2>
-                <p>49.00 TK</p>
+                <p><span>49.00</span> TK</p>
               </div>
             </div>
-            <div class="card bg-base-100 shadow-xl">
+            <div
+              onclick="sportsCatesItem(this)"
+              class="card bg-base-100 shadow-xl">
               <figure>
                 <img src="./image/prod5.png" alt="" />
               </figure>
@@ -222,10 +232,12 @@
                     class="mask mask-star-2 bg-orange-400" />
                 </div>
                 <h2 class="card-title">Full Jersey Set</h2>
-                <p>69.00 TK</p>
+                <p><span>69.00</span> TK</p>
               </div>
             </div>
-            <div class="card bg-base-100 shadow-xl">
+            <div
+              onclick="sportsCatesItem(this)"
+              class="card bg-base-100 shadow-xl">
               <figure>
                 <img src="./image/prod6.png" alt="" />
               </figure>
@@ -254,7 +266,7 @@
                     class="mask mask-star-2 bg-orange-400" />
                 </div>
                 <h2 class="card-title">Sports cates</h2>
-                <p>159.00 TK</p>
+                <p><span>157.00</span> TK</p>
               </div>
             </div>
           </div>
@@ -263,7 +275,9 @@
           <!-- card section -->
           <h1 class="text-4xl font-semibold m-10">Furniture</h1>
           <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-            <div class="card bg-base-100 shadow-xl">
+            <div
+              onclick="homeCookItem(this)"
+              class="card bg-base-100 shadow-xl">
               <figure>
                 <img src="./image/prod7.png" alt="" />
               </figure>
@@ -292,10 +306,12 @@
                     class="mask mask-star-2 bg-orange-400" />
                 </div>
                 <h2 class="card-title">Single Relax Chair</h2>
-                <p>185.00 TK</p>
+                <p><span>185.00</span> TK</p>
               </div>
             </div>
-            <div class="card bg-base-100 shadow-xl">
+            <div
+              onclick="homeCookItem(this)"
+              class="card bg-base-100 shadow-xl">
               <figure>
                 <img src="./image/prod8.png" alt="" />
               </figure>
@@ -324,10 +340,12 @@
                     class="mask mask-star-2 bg-orange-400" />
                 </div>
                 <h2 class="card-title">Children play</h2>
-                <p>299.00 TK</p>
+                <p><span>299.00</span> TK</p>
               </div>
             </div>
-            <div class="card bg-base-100 shadow-xl">
+            <div
+              onclick="homeCookItem(this)"
+              class="card bg-base-100 shadow-xl">
               <figure>
                 <img src="./image/prod9.png" alt="" />
               </figure>
@@ -356,7 +374,7 @@
                     class="mask mask-star-2 bg-orange-400" />
                 </div>
                 <h2 class="card-title">Flexible Sofa</h2>
-                <p>330.00 TK</p>
+                <p><span>330.00</span> TK</p>
               </div>
             </div>
           </div>
@@ -373,31 +391,55 @@
               border: 1px solid rgba(17, 17, 17, 0.15);
             ">
             <input
+              
               class="pl-5"
               type="text"
               name=""
-              id=""
+              id="coupon-input"
               placeholder="Coupon code" />
-            <button class="btn btn-secondary">Apply</button>
+            <button   id="coupon-button" class="btn btn-secondary" disabled>
+              Apply
+            </button>
           </div>
         </div>
         <div>
           <div>
             <ol class="list-decimal list-inside text-2xl mt-10">
               <li>Home Cooker</li>
+
+              <div
+                id="selected-items"
+                class="selected-items list-none ml-10"></div>
+
               <li>Sports cates</li>
+              <div id="sportsWear" class="sportsWear list-none ml-10"></div>
               <li>Home Cooker</li>
+              <div id="furniture" class="furniture list-none ml-10"></div>
             </ol>
           </div>
           <div class="text-2xl mt-12">
-            <p>Total price: 00.00TK</p>
-            <p>Discount : 00.00TK</p>
-            <p>Total: 00.00 TK</p>
+            <p>Total price: <span id="total-price"> 00.00</span>TK</p>
+            <p>Discount: <span id="discount">00.00</span>TK</p>
+            <p>Total: <span id="total">00.00</span>TK</p>
           </div>
         </div>
-        <div>
-          <button class="btn btn-secondary w-full mt-8">Make Purchase</button>
-        </div>
+        <button
+          onclick="my_modal_1.showModal()"
+          class="btn btn-secondary w-full">
+          Make Purchase
+        </button>
+        <dialog id="my_modal_1" class="modal">
+          <form method="dialog" class="modal-box">
+            <div class="justify-center items-center text-center ">
+              <img class="ml-40 " src="./image/congo.png" alt="" />
+              <h3 class="font-bold text-4xl">Congratulations</h3>
+              <p class="py-4 text-2xl">Your Purchase the product</p>
+              <div class="modal-action">
+                <button class="btn btn-secondary mr-40 rounded-lg w-40"><a href="./index.html">Home</a></button>
+              </div>
+            </div>
+          </form>
+        </dialog>
       </section>
     </main>
     <!-- javascript section -->
